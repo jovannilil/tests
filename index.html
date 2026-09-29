@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatcord</title>
+  <meta name="description" content="A Discord-style chat UI demo built with plain HTML, CSS and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <nav class="rail" id="rail" aria-label="Servers"></nav>
+    <aside class="sidebar" id="sidebar">
+      <header class="sidebar-header" id="sidebarHeader"></header>
+      <div class="channel-list scroller" id="channelList"></div>
+      <div class="voice-panel" id="voicePanel" hidden></div>
+      <section class="user-panel" id="userPanel" aria-label="User area"></section>
+    </aside>
+    <main class="main" id="main"></main>
+  </div>
+  <div class="nav-backdrop" data-action="close-nav"></div>
+  <div id="layer"></div>
+  <div class="tooltip" id="tooltip" role="tooltip"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
